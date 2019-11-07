@@ -1,1 +1,8 @@
-<h2>Shoutr SDashboard</h2>
+<h2>Shoutr Dashboard</h2>
+
+<%= form_for @shout do |f| %>
+  <%= f.text_field :body, placeholder: "Shout", required: true %>
+  <%= f.submit "Shout" %>
+<% end %>
+
+<%= render @shouts %>

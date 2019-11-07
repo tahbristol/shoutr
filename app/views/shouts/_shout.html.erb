@@ -1,0 +1,9 @@
+  <hr />
+  <div>
+    <%= link_to shout.username, shout.user %> said,<br />
+    "<%= shout.body %>"<br />
+    <%= link_to shout do %>
+      <%= time_ago_in_words(shout.created_at) %> ago
+     <% end %>
+
+  </div>
